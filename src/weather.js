@@ -35,7 +35,7 @@ export default function Weather(){
             <div className="row">
             <div className="col-6">
             <h1>{weatherData.city}</h1>
-            <h2> <FormattedDate /> </h2>
+            <h2> <FormattedDate date={weatherData.date} /> </h2>
             <h3>{weatherData.description}</h3>
                 <ul>
                 <li>
