@@ -1,13 +1,16 @@
 import './App.css';
+import Weather from './weather';
 
 function App() {
   return (
     <div className="App">
-    <h1>Weather App</h1>
+      <div className="container">
+           <Weather />
     <footer>
       <a href="https://github.com/etretf/react-weather-app-2" target="_blank">Open source code</a>
       <span> by Emma Souannhaphanh</span>
     </footer>
+    </div>
     </div>
   );
 }
