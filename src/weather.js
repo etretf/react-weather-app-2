@@ -3,6 +3,7 @@ import axios from 'axios';
 import './weather.css';
 import WeatherDetail from './weatherDetail';
 
+
 export default function Weather(props){
     const [weatherData, setWeatherData] = useState({ready: false});
     const [city, setCity] = useState(props.defaultCity);
@@ -15,9 +16,9 @@ export default function Weather(props){
             date: new Date(response.data.dt * 1000),
             wind: response.data.wind.speed,
             city: response.data.name,
-            description: response.data.weather[0].description,
             humidity: response.data.main.humidity,
-            iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+            icon: response.data.weather[0].icon,
+            description: response.data.weather[0].description
         });
     }
     function handleSubmit(event){

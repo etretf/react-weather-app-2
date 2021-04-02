@@ -42,14 +42,20 @@
 .Weather .temperature {
     font-size:50px;
     font-weight: 400;
+    margin:0 auto;
     color:rgb(22, 22, 22);
 
 }
 
 .Weather .unit {
-    font-size:20px;
+    font-size:16px;
     font-weight: 400;
     color:rgb(22, 22, 22);
     position: relative;
     top:-20px;
+}
+
+.Weather canvas {
+    margin-top: 20px;
+    margin-right:13px;
 }

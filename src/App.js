@@ -7,7 +7,7 @@ function App() {
       <div className="container">
            <Weather defaultCity="New York"/>
     <footer>
-      <a href="https://github.com/etretf/react-weather-app-2" target="_blank">Open source code</a>
+      <a className="ocLink" href="https://github.com/etretf/react-weather-app-2" target="_blank">Open source code</a>
       <span> by Emma Souannhaphanh</span>
     </footer>
     </div>

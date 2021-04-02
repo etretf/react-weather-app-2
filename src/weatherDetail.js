@@ -1,6 +1,7 @@
 import React from 'react';
 import FormattedDate from './FormattedDate';
-
+import WeatherIcon from './weatherIcon';
+import WeatherConversion from './weatherConversion';
 
 export default function WeatherDetail(props) {
  return(
@@ -25,10 +26,11 @@ export default function WeatherDetail(props) {
             </div>
             <div className="col-6">
             <div className="row">
-            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Sunny with rain"/>
+                <div className="weatherIcon">                
+                <WeatherIcon code={props.data.icon} alt={props.data.description}/>
+                </div>
             </div>
-            <span className="temperature">{Math.round(props.data.temperature)}</span>
-            <span className="unit">°C</span>
+            <WeatherConversion celsius={props.data.temperature} />
             </div>   
             </div>
         </div>
