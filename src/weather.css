@@ -1,5 +1,5 @@
 .Weather {
-    border-radius: 20px auto;
+    border-radius: 15px;
     margin-top: 50px;
     color: rgb(233, 233, 233);
     padding: 20px;
@@ -57,4 +57,13 @@
 
 .Weather canvas {
     margin-top: 20px;
+}
+
+.Weather .btn {
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.Weather .buttons {
+   text-align: center;
 }
