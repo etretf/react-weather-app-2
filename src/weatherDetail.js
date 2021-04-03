@@ -6,7 +6,7 @@ import WeatherConversion from './weatherConversion';
 export default function WeatherDetail(props) {
  return(
      
-    <div className WeatherDetail>
+    <div className="WeatherDetail">
      <div className="row">
             <div className="col-6">
             <h1>{props.data.city}</h1>
@@ -14,20 +14,17 @@ export default function WeatherDetail(props) {
             <h3>{props.data.description}</h3>
                 <ul>
                 <li>
-                    Wind: {Math.round(props.data.wind)} km/h
+                    Wind: <strong>{Math.round(props.data.wind)}</strong> km/h
                 </li>
                 <li>
-                    Humidity: {props.data.humidity}%
-                </li>
-                <li>
-                    Precipitation
+                    Humidity: <strong>{props.data.humidity}%</strong>
                 </li>
             </ul>
             </div>
             <div className="col-6">
             <div className="row">
                 <div className="weatherIcon">                
-                <WeatherIcon code={props.data.icon} alt={props.data.description}/>
+                <WeatherIcon code={props.data.icon} alt={props.data.description} size="90px"/>
                 </div>
             </div>
             <WeatherConversion celsius={props.data.temperature} />
