@@ -46,8 +46,7 @@ export default function Weather(props){
                 <div className="col-6">
                     <div className="buttons">
                        <input type="submit" value="Go" className="btn btn-primary"/>
-                        <input type="button" value="Refresh" className="btn btn-success"/>
-                    <   input type="button" value="Location" className="btn btn-info"/> 
+                    <   input type="button" value="Refresh" className="btn btn-info"/> 
                     </div>
                 </div> 
                 </div>
